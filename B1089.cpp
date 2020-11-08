@@ -56,11 +56,11 @@ int main()
                 {
                     if (wolf.size() == 0)
                     {
-                        for (int m = 0; m < noId.size(); m++)
+                        for (size_t m = 0; m < noId.size(); m++)
                         {
                             vector<int> newWolf;
                             newWolf.push_back(noId[m]);
-                            for (int n = m + 1; n < noId.size(); n++)
+                            for (size_t n = m + 1; n < noId.size(); n++)
                             {
                                 newWolf.push_back(noId[n]);
 
@@ -72,9 +72,9 @@ int main()
                             newWolf.pop_back();
                         }
                     }
-                    if (wolf.size() == 1)
+                    if (wolf.size() == (size_t)1)
                     {
-                        for (int m = 0; m < noId.size(); m++)
+                        for (size_t m = 0; m < noId.size(); m++)
                         {
                             vector<int> newWolf(wolf);
                             newWolf.push_back(noId[m]);
